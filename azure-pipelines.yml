@@ -15,6 +15,7 @@ steps:
 - script: |
     python -m pip install --upgrade pip
     pip install -U pytest
+    pip install beautifultable
     pip install -r requirements.txt
   displayName: 'Install dependencies'
 
