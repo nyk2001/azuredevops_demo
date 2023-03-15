@@ -1,16 +1,8 @@
-trigger:
+trigger: none 
+pr:
   branches:
     include:
-      - main
-  # Manual trigger for pull requests
-  # Pull requests must be explicitly run by a user
-  pr:
-    - main:
-        branches:
-          include:
-            - '*'
-        # Only run the pipeline when a pull request is manually completed
-        trigger: manual
+    - main
 pool:
   vmImage: ubuntu-latest
 
