@@ -2,14 +2,6 @@ trigger:
   branches:
     include:
       - main
-  # Only run the pipeline when a pull request is manually completed
-  # and the source branch matches the branches specified in `branches`
-  # and the pull request is targeted at the `main` branch
-  # and the pull request has been approved by at least one reviewer
-  # and the pull request does not have any merge conflicts
-  # and the pull request has passed any required status checks
-  # and the pull request is not a draft
-  - none
   pr:
     - main:
         branches:
