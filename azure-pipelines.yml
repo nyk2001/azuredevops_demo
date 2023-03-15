@@ -18,5 +18,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    pytest test/test_sample.py --junitxml=unittest.xml
+    cd test
+    pytest --junitxml=unittest.xml
   displayName: 'Run unit tests'
