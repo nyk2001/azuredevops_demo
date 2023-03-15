@@ -22,3 +22,10 @@ steps:
     cd test
     pytest --junitxml=unittest.xml
   displayName: 'Run unit tests'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFormat: 'JUnit'
+    testResultsFiles: '**/unittest.xml'
+    testRunTitle: 'Unit Tests'
+  displayName: 'Publish test results'
