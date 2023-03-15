@@ -6,6 +6,3 @@
 
 seaborn
 matplotlib
-pytest
-pytest-cov
-pytest-dependency==0.2
